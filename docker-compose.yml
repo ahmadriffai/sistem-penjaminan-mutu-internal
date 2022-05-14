@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    container_name: db-penjaminan-mutu
+    restart: always
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=penjaminan-mutu
+      - POSTGRES_PASSWORD=rahasia
+      - POSTGRES_DB=db-penjaminan-mutu
