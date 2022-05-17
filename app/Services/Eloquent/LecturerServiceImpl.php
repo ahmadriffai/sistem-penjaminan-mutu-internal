@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Service\Eloquent;
+namespace App\Services\Eloquent;
 
 use App\Http\Requests\LecturerAddRequest;
 use App\Models\Lecturer;
-use App\Service\LecturerService;
+use App\Services\LecturerService;
 use Illuminate\Support\Str;
 
 class LecturerServiceImpl implements LecturerService {

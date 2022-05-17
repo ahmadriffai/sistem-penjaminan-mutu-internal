@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lecturer;
-use App\Service\LecturerService;
+use App\Services\LecturerService;
 use Illuminate\Http\Request;
 
 class LecturerController extends Controller

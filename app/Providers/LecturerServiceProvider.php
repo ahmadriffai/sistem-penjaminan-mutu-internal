@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use App\Service\Eloquent\LecturerServiceImpl;
-use App\Service\LecturerService;
+use App\Services\Eloquent\LecturerServiceImpl;
+use App\Services\LecturerService;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 

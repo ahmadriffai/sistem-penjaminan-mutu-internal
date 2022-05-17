@@ -20044,7 +20044,7 @@ ups:
   label: UPS
   search:
     terms:
-      - United Parcel Service
+      - United Parcel Services
       - package
       - shipping
   styles:
@@ -20521,7 +20521,7 @@ usps:
   changes:
     - 5.6.0
     - 5.8.0
-  label: United States Postal Service
+  label: United States Postal Services
   search:
     terms:
       - american

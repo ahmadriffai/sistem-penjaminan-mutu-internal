@@ -7,7 +7,7 @@ use App\Http\Requests\UserCreateRequest;
 use App\Jobs\SendMailjob;
 use App\Models\Lecturer;
 use App\Models\User;
-use App\Service\UserService;
+use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;

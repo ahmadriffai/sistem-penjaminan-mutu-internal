@@ -2,14 +2,14 @@
 
 namespace App\Providers;
 
-use App\Service\Eloquent\UserServiceImpl;
-use App\Service\UserService;
+use App\Services\Eloquent\UserServiceImpl;
+use App\Services\UserService;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
 class UserServiceProvider extends ServiceProvider implements DeferrableProvider
 {
-    
+
     public array $singletons = [
         UserService::class => UserServiceImpl::class
     ];

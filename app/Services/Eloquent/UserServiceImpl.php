@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Service\Eloquent;
+namespace App\Services\Eloquent;
 
 use App\Exceptions\InvariantException;
 use App\Http\Requests\UserCreateRequest;
 use App\Http\Requests\UserEditRequest;
 use App\Models\Lecturer;
 use App\Models\User;
-use App\Service\UserService;
+use App\Services\UserService;
 use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

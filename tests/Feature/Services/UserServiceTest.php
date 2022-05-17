@@ -6,7 +6,7 @@ use App\Exceptions\InvariantException;
 use App\Http\Requests\UserCreateRequest;
 use App\Models\Lecturer;
 use App\Models\User;
-use App\Service\UserService;
+use App\Services\UserService;
 use Exception;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;

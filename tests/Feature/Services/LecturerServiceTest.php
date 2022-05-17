@@ -5,7 +5,7 @@ namespace Tests\Feature\Services;
 use App\Http\Requests\LecturerAddRequest;
 use App\Http\Requests\UserCreateRequest;
 use App\Models\Lecturer;
-use App\Service\LecturerService;
+use App\Services\LecturerService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Routing\Redirector;
@@ -45,7 +45,7 @@ class LecturerServiceTest extends TestCase
     }
 
     public function test_add_lecturer_invalid_request() {
-    
+
         $this->expectException(ValidationException::class);
 
         $request = new LecturerAddRequest([]);
