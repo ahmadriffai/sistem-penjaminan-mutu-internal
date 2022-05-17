@@ -13,7 +13,7 @@
     </div>
 @endif
 <div class="row">
-    <div class="col-12">
+    <div class="col-md-12">
         <div class="card">
             <div class="card-body">
                 {!! Form::open(array('route' => 'roles.store','method'=>'POST')) !!}
@@ -29,8 +29,7 @@
                             <br/>
                             @foreach($permission as $value)
                                 <label>{{ Form::checkbox('permission[]', $value->id, false, array('class' => 'name')) }}
-                                {{ $value->name }}</label>
-                            <br/>
+                                {{ $value->name }}</label> |
                             @endforeach
                         </div>
                     </div>

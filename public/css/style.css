@@ -1,3 +1,88 @@
 .base{
     background-color: rgba(39, 153, 39, 0.979);
 }
+
+.green{
+    background-color: rgba(39, 153, 39, 0.979);
+}
+
+.green:hover{
+    background-color: rgba(30, 122, 30, 0.979);
+}
+IconTitle{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    color: #949191;
+    background-color: #f1f1f1;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.img{
+    background-size: cover;
+    width: 100%;
+}
+
+.doc{
+    width: 100px;
+    height: 100px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+
+.Card{
+    background-color: rgba(39, 153, 39, 0.979);
+    width: 200px;
+    height: 220px;
+    margin: 1rem auto;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    color: #f1f1f1;
+    background-color: rgb(249 115 22);
+}
+
+.CardTitle{
+    margin: 1rem;
+    color: #2b2a2a;
+    font-weight: 400;
+}
+
+.IconTitle{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    color: #f1f1f1;
+    background-color: rgba(39, 153, 39, 0.979);
+}
+

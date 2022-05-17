@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\RoleController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,10 +23,21 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['auth']], function() {
-    Route::resource('roles', RoleController::class);
-    Route::resource('users', UserController::class);
+    Route::resource('roles', \App\Http\Controllers\RoleController::class);
+    Route::resource('users', \App\Http\Controllers\UserController::class);
+    Route::resource('lecturer', \App\Http\Controllers\LecturerController::class);
 });
 
 Route::fallback(function() {
     return response()->view('404');
-});     
+});
+
+Route::get('email-test', function(){
+
+    $user = \App\Models\User::get()->first();
+
+
+    dispatch(new App\Jobs\SendMailjob($user));
+
+    dd('done');
+});

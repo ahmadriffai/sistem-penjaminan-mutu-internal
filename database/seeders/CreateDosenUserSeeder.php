@@ -5,11 +5,10 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
-class CreateAdminUserSeeder extends Seeder
+class CreateDosenUserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -19,16 +18,12 @@ class CreateAdminUserSeeder extends Seeder
     public function run()
     {
         $user = User::create([
-            'name' => 'admin',
-            'email' => 'admin@gmail.com',
+            'name' => 'dosen',
+            'email' => 'dosen@gmail.com',
             'password' => bcrypt('rahasia')
         ]);
 
-        $role = Role::create(['name' => 'admin']);
-
-        $permissions = Permission::pluck('id','id')->all();
-
-        $role->syncPermissions($permissions);
+        $role = Role::create(['name' => 'dosen']);
 
         $user->assignRole([$role->id]);
     }
